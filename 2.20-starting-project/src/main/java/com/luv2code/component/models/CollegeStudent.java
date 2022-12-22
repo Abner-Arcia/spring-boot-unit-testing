@@ -1,6 +1,8 @@
 package com.luv2code.component.models;
 
 public class CollegeStudent implements Student {
+
+    private int id;
     private String firstname;
     private String lastname;
     private String emailAddress;
@@ -13,6 +15,14 @@ public class CollegeStudent implements Student {
         this.firstname = firstname;
         this.lastname = lastname;
         this.emailAddress = emailAddress;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstname() {
